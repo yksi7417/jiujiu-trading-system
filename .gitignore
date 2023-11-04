@@ -159,3 +159,5 @@ CMakeScripts/
 # System and editor files
 Thumbs.db
 .DS_Store
+test/cmake_install.cmake
+cmake_install.cmake

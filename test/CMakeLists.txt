@@ -5,8 +5,7 @@ set(CMAKE_CXX_STANDARD 20)
 
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup(TARGETS)
-
-find_package(onetbb::tbb REQUIRED)
+find_package(GTest REQUIRED)
 
 # Add your test source files
 file(GLOB TEST_SOURCES "test_*.cpp")
@@ -18,4 +17,4 @@ add_executable(${PROJECT_NAME} ${TEST_SOURCES})
 target_include_directories(${PROJECT_NAME} PRIVATE ../include)
 
 # Link the libraries from Conan
-target_link_libraries(${PROJECT_NAME} PRIVATE onetbb::tbb GTest::gtest GTest::gtest_main)
+target_link_libraries(${PROJECT_NAME} PRIVATE GTest::gtest GTest::gtest_main)
