@@ -119,6 +119,9 @@ rust/Cargo.lock
 # Conan package files
 conanbuildinfo.txt
 conaninfo.txt
+conanbuildinfo.cmake
+graph_info.json
+conan.lock
 .conan/
 
 # Build artifacts and output directories
