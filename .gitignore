@@ -115,3 +115,44 @@ rust/Cargo.lock
 /sbe-tool/src/main/golang/uk_co_real_logic_sbe_ir_generated/
 
 /generated/
+
+# Conan package files
+conanbuildinfo.txt
+conaninfo.txt
+.conan/
+
+# Build artifacts and output directories
+bin/
+lib/
+build/
+
+# Compiled object files
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+
+# Build system specific files (e.g., CMake)
+CMakeFiles/
+CMakeCache.txt
+CMakeScripts/
+
+# IDE-specific files (e.g., Visual Studio)
+.vscode/
+.idea/
+*.suo
+*.user
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.pdb
+
+# Editor/IDE backup files
+*~
+*.swp
+*.swo
+
+# System and editor files
+Thumbs.db
+.DS_Store
