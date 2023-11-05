@@ -1,7 +1,7 @@
 [requires]
 poco/1.12.4
 gtest/1.13.0
-onetbb/2021.9.0
+onetbb/2021.10.0
 
 [generators]
 cmake
