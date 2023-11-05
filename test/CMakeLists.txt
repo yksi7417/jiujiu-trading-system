@@ -5,7 +5,6 @@ set(CMAKE_CXX_STANDARD 20)
 
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup(TARGETS)
-list(APPEND CMAKE_PREFIX_PATH "CMake/")
 
 find_package(GTest REQUIRED)
 find_package(TBB REQUIRED)
