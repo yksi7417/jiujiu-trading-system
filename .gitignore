@@ -150,6 +150,7 @@ CMakeScripts/
 *.vcxproj
 *.vcxproj.filters
 *.pdb
+Testing/
 
 # Editor/IDE backup files
 *~

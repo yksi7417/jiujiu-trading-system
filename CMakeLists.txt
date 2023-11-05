@@ -6,9 +6,6 @@ set(CMAKE_CXX_STANDARD 20)
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
 
-list(APPEND CMAKE_PREFIX_PATH "CMake/")
-find_package(TBB REQUIRED)
-
 # Add your source files
 file(GLOB SOURCES
   "src/*.cpp"
@@ -22,6 +19,7 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 
 # Add the include directories
 target_include_directories(${PROJECT_NAME} PRIVATE
+  ${CONAN_INCLUDE_DIRS}
   include
   include/client
   include/common
@@ -35,7 +33,7 @@ else()
 endif()
 
 # Link the libraries from Conan
-target_link_libraries(${PROJECT_NAME} PRIVATE TBB::tbb)
+target_link_libraries(${PROJECT_NAME} ${CONAN_LIBS})
 
 # Add the test subdirectory
 add_subdirectory(test)
