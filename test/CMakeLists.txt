@@ -17,4 +17,4 @@ add_executable(${PROJECT_NAME} ${TEST_SOURCES})
 target_include_directories(${PROJECT_NAME} PRIVATE ../include)
 
 # Link the libraries from Conan
-target_link_libraries(${PROJECT_NAME} PRIVATE GTest::gtest GTest::gtest_main)
+target_link_libraries(${PROJECT_NAME} PRIVATE TBB::tbb GTest::gtest GTest::gtest_main)
