@@ -21,3 +21,7 @@ cmake --build .
 * Have to install TBB from 
 https://www.intel.com/content/www/us/en/docs/onetbb/get-started-guide/2021-6/install-onetbb-on-windows-os.html
 Run binary with "Intel oneAPI command prompt for Intel 64 for Visual Studio 2019" 
+
+## With Regarding to SBE 
+cd sbe
+cppbuild/cppbuild.cmd 

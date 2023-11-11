@@ -1,4 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
+cmake_policy(VERSION 3.6.1)
+
 project(JIUJIU-TRADING-SYSTEM)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -36,4 +38,6 @@ endif()
 target_link_libraries(${PROJECT_NAME} ${CONAN_LIBS})
 
 # Add the test subdirectory
+add_subdirectory(sbe)
 add_subdirectory(test)
+

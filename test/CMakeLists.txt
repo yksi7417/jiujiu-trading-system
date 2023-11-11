@@ -20,3 +20,6 @@ target_include_directories(${PROJECT_NAME} PRIVATE ${CONAN_INCLUDE_DIRS} ../incl
 
 # Link the libraries from Conan
 target_link_libraries(${PROJECT_NAME} PRIVATE ${CONAN_LIBS} TBB::tbb GTest::gtest GTest::gtest_main)
+
+# Assuming your test executable is named my_project_tests.exe
+add_test(NAME my_project_tests COMMAND test/bin/my_project_tests.exe)
