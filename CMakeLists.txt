@@ -38,6 +38,6 @@ endif()
 target_link_libraries(${PROJECT_NAME} ${CONAN_LIBS})
 
 # Add the test subdirectory
-add_subdirectory(sbe)
+add_subdirectory(submodules/sbe)
 add_subdirectory(test)
 
